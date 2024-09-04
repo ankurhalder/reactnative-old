@@ -3,9 +3,9 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View>
-        <Text>yo yo</Text>
+        <Text style={styles.dummy}>yo yo</Text>
       </View>
-      <Text style={styles.dummy}>Hello World!</Text>
+      <Text>Hello World!</Text>
       <Button title="Press me" onPress={() => alert("Button pressed")} />
     </View>
   );
