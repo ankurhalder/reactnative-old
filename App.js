@@ -2,8 +2,21 @@ import { StyleSheet, Text, View, Button } from "react-native";
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>yo yo</Text>
-      <Text>Hello World!</Text>
+      <View>
+        <Text>yo yo</Text>
+      </View>
+      <Text
+        style={{
+          backgroundColor: "yellow",
+          fontSize: 20,
+          padding: 10,
+          borderRadius: 10,
+          margin: 15,
+        }}
+        s
+      >
+        Hello World!
+      </Text>
       <Button title="Press me" onPress={() => alert("Button pressed")} />
     </View>
   );
