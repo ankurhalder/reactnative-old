@@ -1,6 +1,11 @@
 import { View, TextInput, Button, StyleSheet, Modal } from "react-native";
 
-function GoalInput({ goalInputHandler, addGoalHandler, modalIsVisible }) {
+function GoalInput({
+  goalInputHandler,
+  addGoalHandler,
+  modalIsVisible,
+  closeModal,
+}) {
   return (
     <Modal visible={modalIsVisible} animationType="slide">
       <View style={styles.inputContainer}>
@@ -14,7 +19,7 @@ function GoalInput({ goalInputHandler, addGoalHandler, modalIsVisible }) {
             <Button title="Add Goal" onPress={addGoalHandler} />
           </View>
           <View style={styles.button}>
-            <Button title="Close" />
+            <Button title="Close" onPress={closeModal} />
           </View>
         </View>
       </View>
